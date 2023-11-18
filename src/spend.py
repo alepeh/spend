@@ -47,7 +47,7 @@ def getDataFrame() -> pandas.DataFrame:
 
 
 def save(df: pandas.DataFrame):
-    df.to_csv(getPath(), index=False, sep=";", mode='a', header=not os.path.exists('spend.csv'))
+    df.to_csv(getPath(), index=False, sep=";", mode='a', header=not os.path.exists(getPath()))
 
 
 def getPath():
