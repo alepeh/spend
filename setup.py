@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'spend = spend:cli',
+            'spend = spend/spend:cli',
         ],
     },
 )
